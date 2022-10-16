@@ -65,27 +65,27 @@
 //     Console.WriteLine(sum);
 // }
 
-
-
 // Задача 29 
 // Напишите программу, которая задаёт массив из N элементов и выводит их на экран.
-// 5 -> [1, 2, 5, 7, 19]
-// 3 -> [6, 1, 33]
 
-
-// int lenArray = ReadInt("Введите длинну массива: ");
-
-// int[] randomArray = new int[lenArray];
-// for (int i = 0; i < randomArray.Length; i++)
+// int[] nums = { -2, 1, -13, 7, 22, -5, 19, 34 };
+ 
+// int temp;
+// for (int i = 0; i < nums.Length - 1; i++)
 // {
-//     randomArray[i] = new Random().Next(1,9);
-//     Console.Write(randomArray[i] + " ");
+//     for (int j = i + 1; j < nums.Length; j++)
+//     {
+//         if (nums[i] > nums[j])
+//         {
+//             temp = nums[i];
+//             nums[i] = nums[j];
+//             nums[j] = temp;
+//         }
+//     }
 // }
-
-
-// int ReadInt(string message)
+ 
+// Console.WriteLine("Вывод отсортированного массива");
+// for (int i = 0; i < nums.Length; i++)
 // {
-//     Console.Write(message);
-//     return Convert.ToInt32(Console.ReadLine());
+//     Console.WriteLine(nums[i]);
 // }
-
